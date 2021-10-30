@@ -21,7 +21,7 @@ sessions = [
     "curation of author affiliations",
 ]
 
-base_directory = "/wikidata_bib"
+base_directory = "/bib"
 
 PAGES = {
     "all time": {"name": "all time", "href": f"{base_directory}/"},
@@ -29,6 +29,11 @@ PAGES = {
     "last week": {"name": "past week", "href": f"{base_directory}/past_week.html"},
     "last day": {"name": "last day", "href": f"{base_directory}/last_day.html"},
 }
+
+TITLE = "WikidataBib"
+
+SUBTITLE = "Dashboard of my readings"
+
 
 ### Update table with notes
 
@@ -60,8 +65,8 @@ html = wbib.render_dashboard(
     filepath="docs/index.html",
     pages=PAGES,
     sections_to_add=sessions,
-    site_title="Wikidata Bib",
-    site_subtitle="Dashboard of Tiago Lubiana's readings",
+    site_title=TITLE,
+    site_subtitle=SUBTITLE,
 )
 
 ### Update dashboard for last month, week and day
@@ -104,8 +109,8 @@ html = wbib.render_dashboard(
     filepath="docs/past_month.html",
     pages=PAGES,
     sections_to_add=sessions,
-    site_title="Wikidata Bib",
-    site_subtitle="Dashboard of Tiago Lubiana's readings",
+    site_title=TITLE,
+    site_subtitle=SUBTITLE,
 )
 
 ### Update last week
@@ -120,8 +125,8 @@ html = wbib.render_dashboard(
     filepath="docs/past_week.html",
     pages=PAGES,
     sections_to_add=sessions,
-    site_title="Wikidata Bib",
-    site_subtitle="Dashboard of Tiago Lubiana's readings",
+    site_title=TITLE,
+    site_subtitle=SUBTITLE,
 )
 
 ### Update last day
@@ -137,8 +142,8 @@ try:
         filepath="docs/last_day.html",
         pages=PAGES,
         sections_to_add=sessions,
-        site_title="Wikidata Bib",
-        site_subtitle="Dashboard of Tiago Lubiana's readings",
+        site_title=TITLE,
+        site_subtitle=SUBTITLE,
     )
 except ValueError as e:
     print("Last day html will be available when Wikidata Bib is used for multiple days")

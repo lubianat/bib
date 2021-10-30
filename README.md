@@ -1,4 +1,4 @@
-# Wikidata Bib Manager v0
+# Wikidata Bib - Literature Manager and dashboard
 
 This repo is a propotype for bibliography management using Wikidata. 
 
