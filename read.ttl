@@ -1,2 +1,5 @@
 @prefix wb: <https://wikidatabib.wiki.opencura.com/wiki/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
+
+wd:Q18507561 wb:Property:P2 "+2021-10-30T00:00:00Z/11" .
+
